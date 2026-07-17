@@ -11,6 +11,7 @@ import { waLink } from "@/lib/format";
 import remolque1 from "@/assets/banners/remolque1.png";
 import remolque2 from "@/assets/banners/remolque2.png";
 import remolque3 from "@/assets/banners/remolque3.png";
+import almacen from "@/assets/almacen.jpg";
 
 const heroSlides = [
   { image: remolque1 },
@@ -163,7 +164,7 @@ export function HomePage() {
       {/* Corporate */}
       <section className="container-x grid gap-8 py-14 lg:grid-cols-2 lg:items-center">
         <div className="relative">
-          <img src="https://images.unsplash.com/photo-1601758064955-c1907c40db8f?w=1200&q=70" alt="Almacén Autopartes Ferrosos" className="rounded-lg object-cover shadow-lg" />
+          <img src={almacen} alt="Almacén Autopartes Ferrosos" className="rounded-lg object-cover shadow-lg" />
           <div className="absolute -bottom-6 -right-4 hidden rounded-md bg-primary p-4 text-primary-foreground shadow-xl md:block">
             <p className="text-3xl font-black">+{s1}</p>
             <p className="text-xs uppercase tracking-wider">años de experiencia</p>
