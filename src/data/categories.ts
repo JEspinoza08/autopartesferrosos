@@ -1,0 +1,88 @@
+import type { Category } from "@/types";
+
+export const categories: Category[] = [
+  {
+    slug: "ejes",
+    name: "Ejes",
+    description: "Ejes completos y componentes para semirremolques y remolques.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/eje.webp",
+    subcategories: ["Ejes completos", "Componentes de eje", "Repuestos"],
+  },
+  {
+    slug: "suspension",
+    name: "Suspensión",
+    description: "Suspensión neumática y mecánica para transporte pesado.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/suspension.webp",
+    subcategories: ["Bolsas de aire", "Amortiguadores", "Ballestas", "Bujes"],
+  },
+  {
+    slug: "frenos",
+    name: "Frenos",
+    description: "Sistemas de freno completos: zapatas, tambores, discos y kits.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/frenos.webp",
+    subcategories: ["Zapatas", "Tambores", "Discos", "Pastillas", "Kits"],
+  },
+  {
+    slug: "sistema-de-aire",
+    name: "Sistema de aire",
+    description: "Válvulas, cámaras, mangueras y tanques para el sistema neumático.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/sistema%20aire.webp",
+    subcategories: ["Válvulas", "Cámaras de freno", "Mangueras", "Tanques"],
+  },
+  {
+    slug: "sistema-electrico",
+    name: "Sistema eléctrico",
+    description: "Sensores, conectores, arneses y componentes eléctricos.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/sistema%20electrico.webp",
+    subcategories: ["Sensores", "Conectores", "Arneses"],
+  },
+  {
+    slug: "iluminacion",
+    name: "Iluminación",
+    description: "Faros, luces LED y accesorios de señalización.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/luces.webp",
+    subcategories: ["Faros", "Luces LED", "Señalización"],
+  },
+  {
+    slug: "quintas-ruedas",
+    name: "Quintas ruedas",
+    description: "Quintas ruedas y kits de reparación de las principales marcas.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/quintasruedas.webp",
+    subcategories: ["Quintas ruedas", "Kits de reparación"],
+  },
+  {
+    slug: "enganches",
+    name: "Enganches",
+    description: "Sistemas de enganche y king pins.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/enganches.webp",
+    subcategories: ["King pins", "Enganches"],
+  },
+  {
+    slug: "rodamientos",
+    name: "Rodamientos",
+    description: "Rodamientos y retenes para ejes y transmisiones.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/rodamientos.webp",
+    subcategories: ["Rodamientos", "Retenes"],
+  },
+  {
+    slug: "accesorios",
+    name: "Accesorios",
+    description: "Accesorios y complementos para camiones y remolques.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/accesorios.webp",
+    subcategories: ["Guardafangos", "Patines de apoyo", "Otros"],
+  },
+  {
+    slug: "componentes-de-remolques",
+    name: "Componentes de remolques",
+    description: "Componentes especializados para remolques y semirremolques.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/componentes.webp",
+    subcategories: ["Estructurales", "Mecánicos"],
+  },
+  {
+    slug: "ofertas",
+    name: "Ofertas",
+    description: "Productos seleccionados con precios especiales.",
+    image: "https://aiaycpmlmmvfciuvqalx.supabase.co/storage/v1/object/public/images/products/ofertas.webp",
+    subcategories: ["Todas las ofertas"],
+  },
+];
