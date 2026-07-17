@@ -79,19 +79,6 @@ export function HomePage() {
     </div>
   </div>
 </section>
-
-      {/* Search block */}
-      <section className="border-b border-border bg-muted">
-        <div className="container-x py-7 sm:py-8">
-          <h2 className="text-center text-lg font-bold">¿Qué repuesto estás buscando?</h2>
-          <form action="/productos" className="mx-auto mt-3 flex max-w-2xl flex-col overflow-hidden rounded-md border border-border bg-card min-[480px]:flex-row">
-            <Search className="ml-3 hidden h-5 w-5 self-center text-muted-foreground min-[480px]:block" />
-            <input name="q" placeholder="Nombre, código, marca o modelo compatible..." className="min-w-0 w-full bg-transparent px-3 py-3 text-sm outline-none" />
-            <button className="btn-primary rounded-none !px-6 py-3">Buscar</button>
-          </form>
-        </div>
-      </section>
-
       {/* Benefits */}
       <section className="container-x py-8 sm:py-12">
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
