@@ -47,7 +47,9 @@ export interface Branch {
   phone: string;
   email: string;
   hours: string;
-  mapHint: string;
+  mapHint?: string;
+  mapEmbedUrl: string;
+  mapUrl: string;
 }
 
 export interface BlogPost {

@@ -13,13 +13,16 @@ export function Sucursales() {
       <div className="mt-6 grid gap-4 md:grid-cols-2">
         {branches.map((b) => (
           <div key={b.id} className="overflow-hidden rounded-lg border border-border bg-card">
-            <div className="relative flex h-40 items-center justify-center bg-gradient-to-br from-industrial to-graphite text-white diag-stripes">
-              <div className="text-center">
-                <MapPin className="mx-auto h-10 w-10 text-primary" />
-                <p className="mt-2 font-black text-xl">{b.city}</p>
-                <p className="text-xs opacity-80">{b.mapHint}</p>
-              </div>
-            </div>
+            <div className="h-56 overflow-hidden">
+  <iframe
+    src={b.mapEmbedUrl}
+    title={b.name}
+    className="h-full w-full border-0"
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+  />
+</div>
             <div className="p-4">
               <p className="font-bold text-lg">{b.name}</p>
               <p className="mt-1 text-sm text-muted-foreground">{b.address}</p>
@@ -29,7 +32,15 @@ export function Sucursales() {
                 <p className="flex items-center gap-2"><Clock className="h-4 w-4 text-primary" /> {b.hours}</p>
               </div>
               <div className="mt-4 flex flex-wrap gap-2">
-                <button className="btn-outline !py-2 !px-3 text-sm"><MapPin className="h-4 w-4" /> Ver ubicación</button>
+                <a
+  href={b.mapUrl}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="btn-outline !py-2 !px-3 text-sm"
+>
+  <MapPin className="h-4 w-4" />
+  Ver ubicación
+</a>
                 <a href={waLink(`Hola, deseo contactar con la sucursal ${b.city}.`)} target="_blank" rel="noreferrer" className="btn-primary !py-2 !px-3 text-sm"><MessageCircle className="h-4 w-4" /> WhatsApp</a>
               </div>
             </div>
